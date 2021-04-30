@@ -1,5 +1,6 @@
 
-$mainColor:rgba(0, 255, 191, 0.685);
+$mainColor:teal;
+
 *{
     margin: 0;
     padding: 0;
@@ -46,9 +47,8 @@ nav {
         height: 5rem;
         margin: 1.5rem;
         color: $mainColor;
-        ::placeholder { 
+        input::placeholder { 
             color:$mainColor;
-            opacity: 1; 
           }
     }
     .check{
