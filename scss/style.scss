@@ -1,0 +1,109 @@
+
+$mainColor:rgba(0, 255, 191, 0.685);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: orange;
+}
+nav {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    background: $mainColor;
+    border-radius: 50%;
+  }
+  
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 25px;
+    gap: 5px;
+  }
+  
+  .burger-menu span {
+    display: block;
+    width: 42px;
+    height: 6px;
+    background: white;
+    border-radius: 1px;
+  }
+
+.mainContainer{
+    margin: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: $mainColor;
+    }
+    input{
+        width:50%;
+        height: 5rem;
+        margin: 1.5rem;
+        color: $mainColor;
+        ::placeholder { 
+            color:$mainColor;
+            opacity: 1; 
+          }
+    }
+    .check{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            width:2%;
+        }
+        p{
+            color: $mainColor;
+        }
+        span{
+            text-decoration: underline;
+        }
+    }
+    button{
+        padding:2rem;
+        width: 20%;
+        border: 1px solid white;
+        background-color: $mainColor;
+    }
+}
+
+
+  @media (max-width: 700px) {
+      .mainContainer{
+          margin :4rem 0;
+          input{
+            width:70%;
+            height: 3rem;
+            margin: 1.5rem;
+            color: $mainColor;
+        }
+        .check{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input{
+                width:3%;
+            }
+            p{
+                color: $mainColor;
+            }
+            span{
+                text-decoration: underline;
+            }
+        }
+        button{
+            padding:1rem;
+            width: 70%;
+            border: 1px solid white;
+            background-color: $mainColor;
+        }
+      }
+}
